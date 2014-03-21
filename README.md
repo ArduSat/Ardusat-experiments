@@ -1,7 +1,7 @@
 Ardusat-experiments
 ===================
 
-A set of useful experiments that can be run on Ardusat.
+A set of useful experiments that can be run on Ardusat and/or in the classroom in support of the Ardusat education platform at http://ardusat.org
 
 Usage Instructions
 ===================
