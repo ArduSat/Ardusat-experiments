@@ -104,7 +104,7 @@ SAT_Lum tslB(2);  // TSL2561 #2 bottomplate slit (0x39)
 #define DATATYPE_USERDEFINED1    0x2000
 
 
-// structured packet of data, easy to decode after reception (see https://github.com/jfomhover/ArduSat-utils for syntax)
+// structured packet of data, easy to decode after reception (see https://github.com/jfomhover/ArduSat-utils for syntax and decoder)
 struct _dataChunk {
   char header;
   uint16_t datatypes;
@@ -195,7 +195,7 @@ void pullValues() {
   data.tsl_two_values[0] = lumB_ir;
   data.tsl_two_values[1] = lumB_full;
   
-  data.userdefinedblock[0] = 2; // DATATYPE_USERDEFINED_HEX2; // will display in binary format on the decoder
+  data.userdefinedblock[0] = 3; // DATATYPE_USERDEFINED_HEX32; // will display in binary format on the decoder
   data.userdefinedblock[1] = config_gain;
   data.userdefinedblock[2] = config_integration;
   data.userdefinedblock[3] = 0x00;
